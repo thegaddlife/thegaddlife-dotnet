@@ -10,8 +10,8 @@ const customMarkdownOptions = (content) => ({
         id={node.data.target.sys.id}
         assets={content.links.assets.block}
       />
-    ),
-  },
+    )
+  }
 })
 
 export default function PostBody({ content }) {
