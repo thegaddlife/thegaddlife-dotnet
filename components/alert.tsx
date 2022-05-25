@@ -8,33 +8,20 @@ export default function Alert({ preview }) {
     <div
       className={cn('border-b', {
         'bg-accent-7 border-accent-7 text-white': preview,
-        'bg-accent-1 border-accent-2': !preview
+        hidden: !preview
       })}
     >
       <Container>
         <div className="py-2 text-sm text-center">
-          {preview ? (
-            <>
-              This is page is a preview.{' '}
-              <Link href="/api/exit-preview">
-                <a className="underline transition-colors duration-200 hover:text-cyan">
-                  Click here
-                </a>
-              </Link>{' '}
-              to exit preview mode.
-            </>
-          ) : (
-            <>
-              The source code for this blog is{' '}
-              <a
-                href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
-                className="underline transition-colors duration-200 hover:text-success"
-              >
-                available on GitHub
+          <>
+            This is page is a preview.{' '}
+            <Link href="/api/exit-preview">
+              <a className="underline transition-colors duration-200 hover:text-cyan">
+                Click here
               </a>
-              .
-            </>
-          )}
+            </Link>{' '}
+            to exit preview mode.
+          </>
         </div>
       </Container>
     </div>

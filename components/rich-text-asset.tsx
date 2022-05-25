@@ -5,7 +5,19 @@ export default function RichTextAsset({ id, assets }) {
 
   if (asset?.url) {
     return (
-      <ContentfulImage src={asset.url} layout="fill" alt={asset.description} />
+      <div
+        style={{
+          position: 'relative',
+          height: '400px',
+          maxHeight: '400px'
+        }}
+      >
+        <ContentfulImage
+          src={asset.url}
+          layout="fill"
+          alt={asset.description}
+        />
+      </div>
     )
   }
 
