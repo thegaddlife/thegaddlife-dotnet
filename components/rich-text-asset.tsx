@@ -7,14 +7,13 @@ export default function RichTextAsset({ id, assets }) {
     return (
       <div
         style={{
-          position: 'relative',
-          height: '400px',
-          maxHeight: '400px'
+          position: 'relative'
         }}
       >
         <ContentfulImage
           src={asset.url}
           layout="fill"
+          objectFit="fill"
           alt={asset.description}
         />
       </div>
