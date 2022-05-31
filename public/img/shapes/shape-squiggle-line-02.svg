@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="900px" height="92px" viewBox="0 0 900 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Path</title>
-    <g id="Shapes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
-        <path d="M0,20.5 C62.7058411,20.5 86,43 128.8,47.5 C171.7,52 214.3,46 257.2,36.7 C300,27.3 343,14.7 385.8,25.2 C428.7,35.7 471.3,69.3 514.2,71.2 C557,73 600,43 642.8,37.8 C685.7,32.7 728.3,52.3 771.2,61 C814,69.7 869.299927,65 900,65" id="Path" stroke="#4FF0FF" stroke-width="40" transform="translate(450.000000, 45.888875) scale(-1, 1) translate(-450.000000, -45.888875) "></path>
-    </g>
-</svg>

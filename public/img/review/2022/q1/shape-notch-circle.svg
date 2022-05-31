@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1300px" height="100px" viewBox="0 0 1300 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Rectangle</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M0,0 C216.666667,63.2768362 433.333333,94.9152542 650,94.9152542 C866.666667,94.9152542 1083.33333,63.2768362 1300,0 L1300,100 L0,100 L0,0 Z" id="Rectangle" fill="#FFFFFF"></path>
-    </g>
-</svg>

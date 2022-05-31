@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="900px" height="120px" viewBox="0 0 900 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Path</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M0,120 L900,120 L900,58 L886.3,45 C872.7,32 845.3,6 818,1 C790.7,-4 763.3,12 736.2,30 C709,48 682,68 654.8,66 C627.7,64 600.3,40 573,40 C545.7,40 518.3,64 491,63 C463.7,62 436.3,36 409,24 C381.7,12 354.3,14 327,29 C299.7,44 272.3,72 245.2,82 C218,92 191,84 163.8,73 C136.7,62 109.3,48 82,45 C54.7,42 27.3,50 13.7,54 L0,58 L0,120 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
-    </g>
-</svg>
