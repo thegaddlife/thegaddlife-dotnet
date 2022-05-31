@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900px" height="72px" viewBox="0 0 900 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Shapes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <path d="M0,10.5 C62.7058411,10.5 86,33 128.8,37.5 C171.7,42 214.3,36 257.2,26.7 C300,17.3 343,4.7 385.8,15.2 C428.7,25.7 471.3,59.3 514.2,61.2 C557,63 600,33 642.8,27.8 C685.7,22.7 728.3,42.3 771.2,51 C814,59.7 869.299927,55 900,55" id="Path" stroke="#4FF0FF" stroke-width="20"></path>
+    </g>
+</svg>

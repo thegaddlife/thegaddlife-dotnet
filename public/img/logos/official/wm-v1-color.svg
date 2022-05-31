@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="155px" viewBox="0 0 128 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Combined Shape</title>
+    <defs>
+        <linearGradient x1="50%" y1="88.2454619%" x2="50%" y2="6.21625827%" id="linearGradient-1">
+            <stop stop-color="#7C39FF" offset="0%"></stop>
+            <stop stop-color="#04B9FF" offset="49.7267007%"></stop>
+            <stop stop-color="#00EBBF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="WM-Stacked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,57 L24,67 L24,115.584 L64,95.5835921 L104,115.583 L104,97 L128,87 L128,154.416408 L64,122.417 L0,154.416408 L0,57 Z M128,0 L128,77.4164079 L104,87.4164079 L104,38.8334079 L64,58.8328157 L24,38.8324079 L24,57.4164079 L0,47.4164079 L0,0 L64,31.9994079 L128,0 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>

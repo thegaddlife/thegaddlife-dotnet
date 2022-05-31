@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>branch</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#9BABB9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#9BABB9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#3EEE91" offset="0%"></stop>
+            <stop stop-color="#16C368" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-4" cx="42.087" cy="120" r="15"></circle>
+        <circle id="path-5" cx="108.009" cy="47.937" r="15"></circle>
+        <circle id="path-6" cx="42" cy="30" r="15"></circle>
+    </defs>
+    <g id="branch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="url(#linearGradient-1)" fill-rule="nonzero" x="36.27" y="39" width="12" height="72"></rect>
+        <path d="M36.293993,105.006 C36.282,90.156 51.633,87.585 65.178,85.32 C87.582,81.567 102.267,77.358 102.246,53.943 L114.246029,53.931 C114.279,89.265 85.923,94.011 67.161,97.155 C53.235,99.486 48.291,101.022 48.293993,104.997 L36.293993,105.006 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+        <g id="Oval" fill-rule="nonzero">
+            <use fill="#3EEE91" xlink:href="#path-4"></use>
+            <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+        </g>
+        <g id="Oval" fill-rule="nonzero">
+            <use fill="#3EEE91" xlink:href="#path-5"></use>
+            <use fill="url(#linearGradient-3)" xlink:href="#path-5"></use>
+        </g>
+        <g id="Oval" fill-rule="nonzero">
+            <use fill="#3EEE91" xlink:href="#path-6"></use>
+            <use fill="url(#linearGradient-3)" xlink:href="#path-6"></use>
+        </g>
+    </g>
+</svg>

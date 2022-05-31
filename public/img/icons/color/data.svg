@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>data</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3EEE91" offset="0%"></stop>
+            <stop stop-color="#16C368" offset="100%"></stop>
+        </linearGradient>
+        <path d="M135,65 L135,131 L111,131 L111,65 C111,63.344 112.344,62 114,62 L132,62 C133.656,62 135,63.344 135,65 Z" id="path-2"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#3EEE91" offset="0%"></stop>
+            <stop stop-color="#16C368" offset="100%"></stop>
+        </linearGradient>
+        <path d="M87,80 L87,131 L63,131 L63,80 C63,78.344 64.344,77 66,77 L84,77 C85.656,77 87,78.344 87,80 Z" id="path-4"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#3EEE91" offset="0%"></stop>
+            <stop stop-color="#16C368" offset="100%"></stop>
+        </linearGradient>
+        <path d="M39,92 L39,131 L15,131 L15,92 C15,90.344 16.344,89 18,89 L36,89 C37.656,89 39,90.344 39,92 Z" id="path-6"></path>
+    </defs>
+    <g id="data" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" fill="#3EEE91" fill-rule="nonzero" points="51.795 59.291 26.274 52.91 27.726 47.09 50.205 52.709 74.205 31.709 98.49 37.781 121.41 23.456 124.59 28.544 99.51 44.219 75.795 38.291"></polygon>
+        <g id="Path" fill-rule="nonzero">
+            <use fill="#3EEE91" xlink:href="#path-2"></use>
+            <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+        </g>
+        <polygon id="Path" fill="#3EEE91" fill-rule="nonzero" points="111 86 111 131 87 131 87 86"></polygon>
+        <g id="Path" fill-rule="nonzero">
+            <use fill="#3EEE91" xlink:href="#path-4"></use>
+            <use fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+        </g>
+        <polygon id="Path" fill="#3EEE91" fill-rule="nonzero" points="63 101 63 131 39 131 39 101"></polygon>
+        <g id="Path" fill-rule="nonzero">
+            <use fill="#3EEE91" xlink:href="#path-6"></use>
+            <use fill="url(#linearGradient-5)" xlink:href="#path-6"></use>
+        </g>
+        <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="123" cy="26" r="6"></circle>
+        <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="99" cy="41" r="6"></circle>
+        <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="75" cy="35" r="6"></circle>
+        <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="51" cy="56" r="6"></circle>
+        <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="27" cy="50" r="6"></circle>
+    </g>
+</svg>

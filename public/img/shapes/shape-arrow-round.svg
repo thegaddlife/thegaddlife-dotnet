@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="252px" height="232px" viewBox="0 0 252 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Asset 13</title>
+    <g id="Shapes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Asset-13" transform="translate(4.000000, 4.000000)" stroke="#4FF0FF" stroke-width="8">
+            <path d="M158.422949,213.912254 C108.43271,236.683273 49.306061,219.836308 18.8254836,174.136726 C-11.6550939,128.437144 -4.49102879,67.3765187 35.7397744,29.9731594 C75.9705776,-7.43019983 137.391055,-10.1339562 180.752949,23.5896158 C224.114843,57.3131878 236.616719,117.50811 210.269761,165.709265" id="Path"></path>
+            <polyline id="Path" points="243.785461 146.444046 207 172 198.249969 126.480377"></polyline>
+        </g>
+    </g>
+</svg>

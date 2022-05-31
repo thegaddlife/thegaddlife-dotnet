@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="120px" viewBox="0 0 180 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard Copy 5</title>
+    <defs>
+        <linearGradient x1="0%" y1="27.7777778%" x2="100%" y2="72.2222222%" id="linearGradient-1">
+            <stop stop-color="#B97EFF" offset="0%"></stop>
+            <stop stop-color="#8348FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard-Copy-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="180" height="120"></rect>
+        <g id="Group" transform="translate(50.000000, 20.000000)">
+            <polygon id="Path" points="0 0 80 0 80 80 0 80"></polygon>
+            <path d="M40,2 L54.0706212,22.5074627 L78,29.5024876 L62.7673705,49.1708126 L63.4832209,74 L40,65.6484245 L16.5167791,74 L17.2326295,49.1708126 L2,29.5024876 L25.9293788,22.5074627 L40,2 Z M33.340927,40.1426202 L26.681854,40.1426202 C26.681854,47.3406136 32.4434587,53.2256707 39.6669423,53.4056768 C46.890426,53.5856828 52.9403241,47.994966 53.3014983,40.8059701 L53.318146,40.1426202 L46.659073,40.1426202 C46.6751474,43.7208265 43.8394262,46.666876 40.2499184,46.8011335 C36.6604106,46.9353909 33.6109031,44.209465 33.3575747,40.6401327 L33.340927,40.1426202 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
