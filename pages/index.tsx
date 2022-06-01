@@ -1,28 +1,27 @@
-import type { NextPage } from 'next'
-import React from 'react'
-import CardSimple from '@components/buttons/CardSimple'
+import { NextPage } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+
+import Container from '../components/Container'
 
 const Home: NextPage = () => {
   return (
-    <>
-      <section className="bg-gradient-to-t from-zinc-900 to-[#141417]">
-        <div className="py-12 mx-auto max-w-7xl">
-          <div className="mx-8">
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-              <CardSimple
-                href="/my-memories"
-                target="_self"
-                title="My Memories"
-                subtext="Memories recorded by Dad in 1999"
-                img="/img/icons/color/blog.svg"
-                alt="browser icon"
-                className=""
-              />
-            </div>
+    <Container>
+      <div className="flex flex-col items-start justify-center max-w-2xl pb-16 mx-auto border-gray-200 dark:border-gray-700">
+        <div className="flex flex-col-reverse items-start sm:flex-row">
+          <div className="flex flex-col pr-8">
+            <h1 className="mb-1 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
+              theGaddLife
+            </h1>
+            <p className="mb-16 text-gray-600 dark:text-gray-400">
+              An online Gadd Family museum of sorts.
+            </p>
           </div>
         </div>
-      </section>
-    </>
+
+        <span className="h-16" />
+      </div>
+    </Container>
   )
 }
 

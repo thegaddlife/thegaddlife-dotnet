@@ -5,7 +5,6 @@ import Document, {
   NextScript,
   DocumentContext,
 } from 'next/document'
-
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx)
@@ -16,23 +15,14 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* GOOGLE FONT */}
-          <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-            rel="stylesheet"
-          ></link>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap"
-            rel="stylesheet"
-          ></link>
-
-          {/* ADOBE FONT */}
-          <link
-            rel="stylesheet"
-            href="https://use.typekit.net/wkd8kyu.css"
-          ></link>
+          <meta content="#ffffff" name="theme-color" />
+          <meta content="#ffffff" name="msapplication-TileColor" />
+          <meta
+            content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+            name="robots"
+          />
         </Head>
-        <body className="">
+        <body className="text-white bg-white dark:bg-black dark:text-black">
           <Main />
           <NextScript />
         </body>
