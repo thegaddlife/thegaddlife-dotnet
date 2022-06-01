@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>blog</title>
+    <defs>
+        <linearGradient x1="50%" y1="0.511764706%" x2="50%" y2="102.447059%" id="linearGradient-1">
+            <stop stop-color="#FFCC42" offset="0%"></stop>
+            <stop stop-color="#FDC429" offset="72.8%"></stop>
+            <stop stop-color="#FAC023" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9937508%" y1="3.41292662%" x2="49.9937508%" y2="102.750344%" id="linearGradient-2">
+            <stop stop-color="#FFDA1C" offset="0%"></stop>
+            <stop stop-color="#FEB705" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.0176612827%" y1="49.9879426%" x2="100%" y2="49.9879426%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#C8C8C8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.00594556832%" y1="50.0007432%" x2="99.9985136%" y2="50.0007432%" id="linearGradient-4">
+            <stop stop-color="#F44F5A" offset="0%"></stop>
+            <stop stop-color="#EE3D4A" offset="44.3%"></stop>
+            <stop stop-color="#E52030" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.0176612827%" y1="49.9879426%" x2="100%" y2="49.9879426%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#C8C8C8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="blog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M30,18 L106,18 C109.865993,18 113,21.1340068 113,25 L113,125 C113,128.865993 109.865993,132 106,132 L30,132 C26.1340068,132 23,128.865993 23,125 L23,25 C23,21.1340068 26.1340068,18 30,18 Z" id="Rectangle" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+        <path d="M93.5,54 L42.5,54 C41.672,54 41,53.328 41,52.5 L41,49.5 C41,48.672 41.672,48 42.5,48 L93.5,48 C94.328,48 95,48.672 95,49.5 L95,52.5 C95,53.328 94.328,54 93.5,54 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <path d="M87.5,66 L42.5,66 C41.672,66 41,65.328 41,64.5 L41,61.5 C41,60.672 41.672,60 42.5,60 L87.5,60 C88.328,60 89,60.672 89,61.5 L89,64.5 C89,65.328 88.328,66 87.5,66 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <path d="M90.5,78 L42.5,78 C41.672,78 41,77.328 41,76.5 L41,73.5 C41,72.672 41.672,72 42.5,72 L90.5,72 C91.328,72 92,72.672 92,73.5 L92,76.5 C92,77.328 91.328,78 90.5,78 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <path d="M42.5,90 C41.672,90 41,89.328 41,88.5 L41,85.5 C41,84.672 41.672,84 42.5,84 L75.5,84 C76.328,84 77,84.672 77,85.5 L77,88.5 C77,89.328 76.328,90 75.5,90" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <line x1="78.515" y1="124.515" x2="83.969" y2="119.061" id="Path" stroke="#057093" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></line>
+        <path d="M124.079,77.079 L119.654,72.654 C118.784,71.784 117.374,71.784 116.507,72.654 L101.654,87.507 C100.784,88.377 100.784,89.787 101.654,90.654 L106.079,95.079 L124.079,77.079 Z" id="Path" fill="#B31523" fill-rule="nonzero"></path>
+        <path d="M122,75.276 L127.712,69.564 C128.462,68.814 129.677,68.814 130.427,69.564 L133.439,72.573 C134.189,73.323 134.189,74.538 133.439,75.288 L127.727,81 L122,75.276 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+        <path d="M80.666,113.391 L78.884,120.477 C78.329,122.676 80.324,124.671 82.526,124.119 L89.612,122.334 L90.866,111.963 L80.666,113.391 Z" id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+        <path d="M130.121,81.822 L89.486,122.46 L80.543,113.517 L121.178,72.879 C122.351,71.706 124.25,71.706 125.42,72.879 L130.121,77.58 C131.294,78.75 131.294,80.652 130.121,81.822 Z" id="Path" fill="url(#linearGradient-4)" fill-rule="nonzero"></path>
+        <polygon id="Path" fill="url(#linearGradient-5)" fill-rule="nonzero" points="100.352 93.693 104.135 89.907 113.084 98.85 109.301 102.636"></polygon>
+    </g>
+</svg>
