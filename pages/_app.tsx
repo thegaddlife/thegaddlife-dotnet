@@ -1,12 +1,15 @@
-import 'styles/global.css'
+import 'styles/global.css';
 
-import type { AppProps } from 'next/app'
-import { ThemeProvider } from 'next-themes'
+import type { AppProps } from 'next/app';
+import { ThemeProvider } from 'next-themes';
+import { SessionProvider } from 'next-auth/react';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class">
-      <Component {...pageProps} />
-    </ThemeProvider>
-  )
+    <SessionProvider session={pageProps.session}>
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </SessionProvider>
+  );
 }

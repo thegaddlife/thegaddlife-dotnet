@@ -1,16 +1,16 @@
-import Head from 'next/head'
-import { useRouter } from 'next/router'
-import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import NextLink from 'next/link'
-import cn from 'classnames'
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
+import NextLink from 'next/link';
+import cn from 'classnames';
 
-import Footer from 'components/Footer'
-import MobileMenu from 'components/MobileMenu'
+import Footer from 'components/Footer';
+import MobileMenu from 'components/MobileMenu';
 
 function NavItem({ href, text }) {
-  const router = useRouter()
-  const isActive = router.asPath === href
+  const router = useRouter();
+  const isActive = router.asPath === href;
 
   return (
     <NextLink href={href}>
@@ -19,30 +19,31 @@ function NavItem({ href, text }) {
           isActive
             ? 'font-semibold text-gray-800 dark:text-gray-200'
             : 'font-normal text-gray-600 dark:text-gray-400',
-          'hidden rounded-lg p-1 transition-all hover:bg-gray-200 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block'
+          'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'
         )}
       >
         <span className="capsize">{text}</span>
       </a>
     </NextLink>
-  )
+  );
 }
 
 export default function Container(props) {
-  const [mounted, setMounted] = useState(false)
-  const { resolvedTheme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme, setTheme } = useTheme();
 
   // After mounting, we have access to the theme
-  useEffect(() => setMounted(true), [])
+  useEffect(() => setMounted(true), []);
 
-  const { children, ...customMeta } = props
-  const router = useRouter()
+  const { children, ...customMeta } = props;
+  const router = useRouter();
   const meta = {
-    title: 'theGaddLife – A Gadd Family museum of sorts.',
-    description: `An online history of the Gadd Family.`,
+    title: 'Lee Robinson – Developer, writer, creator.',
+    description: `Front-end developer, JavaScript enthusiast, and course creator.`,
+    image: 'https://leerob.io/static/images/banner.png',
     type: 'website',
-    ...customMeta,
-  }
+    ...customMeta
+  };
 
   return (
     <div className="bg-gray-50 dark:bg-gray-900">
@@ -50,36 +51,39 @@ export default function Container(props) {
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta
-          property="og:url"
-          content={`https://thegaddlife.com${router.asPath}`}
-        />
-        <link
-          rel="canonical"
-          href={`https://thegaddlife.com${router.asPath}`}
-        />
+        <meta property="og:url" content={`https://leerob.io${router.asPath}`} />
+        <link rel="canonical" href={`https://leerob.io${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="theGaddLife" />
+        <meta property="og:site_name" content="Lee Robinson" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
+        <meta property="og:image" content={meta.image} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@leeerob" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        <meta name="twitter:image" content={meta.image} />
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
       <div className="flex flex-col justify-center px-8">
-        <nav className="relative flex items-center justify-between w-full max-w-2xl pt-8 pb-8 mx-auto text-gray-900 border-gray-200 bg-gray-50 bg-opacity-60 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 sm:pb-16">
+        <nav className="flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16  text-gray-900 bg-gray-50  dark:bg-gray-900 bg-opacity-60 dark:text-gray-100">
           <a href="#skip" className="skip-nav">
             Skip to content
           </a>
           <div className="ml-[-0.60rem]">
             <MobileMenu />
             <NavItem href="/" text="Home" />
-            <NavItem href="/my-memories" text="My Memories" />
+            <NavItem href="/guestbook" text="Guestbook" />
+            <NavItem href="/dashboard" text="Dashboard" />
+            <NavItem href="/blog" text="Blog" />
+            <NavItem href="/snippets" text="Snippets" />
           </div>
           <button
             aria-label="Toggle Dark Mode"
             type="button"
-            className="flex items-center justify-center transition-all bg-gray-200 rounded-lg h-9 w-9 ring-gray-300 hover:ring-2 dark:bg-gray-600"
+            className="w-9 h-9 bg-gray-200 rounded-lg dark:bg-gray-600 flex items-center justify-center  hover:ring-2 ring-gray-300  transition-all"
             onClick={() =>
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
             }
@@ -120,5 +124,5 @@ export default function Container(props) {
         <Footer />
       </main>
     </div>
-  )
+  );
 }
