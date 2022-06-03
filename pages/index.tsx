@@ -30,7 +30,7 @@ export default function Home({}) {
             </p>
           </div>
           <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:max-w-none lg:grid-cols-3">
-            <Link href="/blog/my-memories">
+            <Link href="/stories/my-memories">
               <a
                 className={cn(
                   'transform hover:scale-[1.05] transition-all',
