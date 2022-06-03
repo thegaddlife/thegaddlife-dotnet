@@ -16,6 +16,7 @@ module.exports = withContentlayer({
     legacyBrowsers: false,
     browsersListForSwc: true
   },
+  experimental: { images: { layoutRaw: true } },
   async headers() {
     return [
       {

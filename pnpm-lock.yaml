@@ -23,6 +23,7 @@ specifiers:
   prisma: 3.14.0
   react: 17.0.2
   react-dom: 17.0.2
+  react-rough-notation: ^1.0.2
   reading-time: ^1.4.0
   rehype: 12.0.1
   rehype-autolink-headings: 6.1.1
@@ -30,6 +31,7 @@ specifiers:
   rehype-prism-plus: ^1.4.0
   rehype-slug: 5.0.1
   remark-gfm: ^3.0.1
+  rough-notation: ^0.5.1
   rss: 1.2.2
   swr: 1.3.0
   tailwindcss: 3.0.24
@@ -51,6 +53,8 @@ dependencies:
   preact: 10.7.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-rough-notation: 1.0.2_sfoxds7t5ydpegc3knd667wn6m
+  rough-notation: 0.5.1
   swr: 1.3.0_react@17.0.2
   tailwindcss: 3.0.24
   use-delayed-render: 0.0.7_react@17.0.2
@@ -3999,6 +4003,17 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
 
+  /react-rough-notation/1.0.2_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-nS3u90cZMQrOSzUbut28nrVgc1ixMaclDloqGi1Sw5BiY3DQNQPL8cVbIVoKUxwSiWugVM5GPf9ubL/h/avoKw==}
+    peerDependencies:
+      react: ^17.0.0
+      react-dom: ^17.0.0
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      rough-notation: 0.4.0
+    dev: false
+
   /react/17.0.2:
     resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
     engines: {node: '>=0.10.0'}
@@ -4207,6 +4222,14 @@ packages:
     dependencies:
       glob: 7.2.3
     dev: true
+
+  /rough-notation/0.4.0:
+    resolution: {integrity: sha512-hDgn9qMIxWnfY+WWjt30aLMtDHR13H8r/NI3EQNdJiEFAzpklH5nKg4eH/thpxCWTYzyg8ueMsKIfz9MzOBQ4Q==}
+    dev: false
+
+  /rough-notation/0.5.1:
+    resolution: {integrity: sha512-ITHofTzm13cWFVfoGsh/4c/k2Mg8geKgBCwex71UZLnNuw403tCRjYPQ68jSAd37DMbZIePXPjDgY0XdZi9HPw==}
+    dev: false
 
   /rss/1.2.2:
     resolution: {integrity: sha1-UKFpiHYTgTOnT5oF0r3I240nqSE=}

@@ -22,9 +22,9 @@ I've recorded two live streams walking through this repository and answering que
 - `data/*` - MDX data that is used for blogs and code snippets.
 - `layouts/*` - The different page layouts each MDX category (blog, snippets) uses.
 - `lib/*` - Short for "library", a collection of helpful utilities or code for external services.
-- `pages/api/*` - [API Routes](https://nextjs.org/docs/api-routes/introduction) powering [`/dashboard`](https://leerob.io/dashboard), newsletter subscription, guestbook, and post views.
+- `pages/api/*` - [API Routes](https://nextjs.org/docs/api-routes/introduction) powering [`/dashboard`](https://thegaddlife.com/dashboard), newsletter subscription, guestbook, and post views.
 - `pages/blog/*` - Static pre-rendered blog pages using MDX.
-- `pages/dashboard` - [Personal dashboard](https://leerob.io/dashboard) tracking metrics.
+- `pages/dashboard` - [Personal dashboard](https://thegaddlife.com/dashboard) tracking metrics.
 - `pages/*` - All other static pages.
 - `prisma/*` - My Prisma schema, which uses a PlanetScale MySQL database.
 - `public/*` - Static assets including fonts and images.

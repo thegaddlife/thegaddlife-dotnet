@@ -1,134 +1,114 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import cn from 'classnames';
+import { RoughNotation } from 'react-rough-notation';
 
 import Container from '../components/Container';
-import BlogPostCard from '../components/BlogPostCard';
-import Subscribe from '../components/Subscribe';
-import VideoCard from '../components/VideoCard';
 
-export default function Home({ videos }) {
+export default function Home({}) {
   return (
     <Container>
-      <div className="flex flex-col justify-center items-start max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pb-16">
-        <div className="flex flex-col-reverse sm:flex-row items-start">
-          <div className="flex flex-col pr-8">
-            <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
-              Lee Robinson
-            </h1>
-            <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-              Director of Developer Relations at{' '}
-              <span className="font-semibold">Vercel</span>
+      <div className="relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
+        <div className="relative mx-auto max-w-7xl">
+          <div className="text-center">
+            <h2 className="mb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+              <RoughNotation
+                type="bracket"
+                brackets={['left', 'right']}
+                show={true}
+                padding={6}
+                color="#ff4df9"
+                strokeWidth={7}
+                animationDelay={500}
+                animationDuration={1200}
+              >
+                theGaddLife
+              </RoughNotation>
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-16">
-              Helping developers build a faster web. Teaching about web
-              development, serverless, and React / Next.js.
+            <p className="max-w-2xl mx-auto text-xl text-gray-500 dark:text-gray-200 sm:mt-4">
+              An online Gadd family museum (of sorts)
             </p>
           </div>
-          <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
-            <Image
-              alt="Lee Robinson"
-              height={176}
-              width={176}
-              src="/avatar.jpg"
-              className="rounded-full filter grayscale"
-            />
+          <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:max-w-none lg:grid-cols-3">
+            <Link href="/blog/my-memories">
+              <a
+                className={cn(
+                  'transform hover:scale-[1.05] transition-all',
+                  'rounded-xl shadow-lg w-full bg-gradient-to-r p-1',
+                  'from-[#D8B4FE] to-[#818CF8]'
+                )}
+              >
+                <div className="flex flex-col overflow-hidden rounded-xl">
+                  <div className="flex-shrink-0">
+                    <Image
+                      width="1536"
+                      height="2048"
+                      layout="raw"
+                      className="object-cover w-full h-48"
+                      alt="Eugene in Hawaii"
+                      src="/static/images/my-memories/navy-1.jpeg"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-between flex-1 p-6 bg-white dark:bg-gray-800">
+                    <div className="flex-1">
+                      <p className="w-20 px-2 py-1 mb-4 text-sm font-medium text-center text-white bg-indigo-500 rounded dark:text-indigo-300">
+                        <a href="#" className="hover:underline">
+                          {' '}
+                          Story{' '}
+                        </a>
+                      </p>
+
+                      <p className="text-xl font-semibold text-gray-900 dark:text-white">
+                        <RoughNotation
+                          type="underline"
+                          show={true}
+                          color="#6EE7B7"
+                          strokeWidth={3}
+                          animationDelay={1000}
+                          animationDuration={1200}
+                        >
+                          My Memories
+                        </RoughNotation>
+                      </p>
+                      <p className="mt-3 text-base text-gray-500 dark:text-gray-200">
+                        A personal memoir from Gene Gadd. Written for his wife,
+                        children and grandchildren.
+                      </p>
+                    </div>
+                    <div className="flex items-center mt-6">
+                      <div className="flex-shrink-0">
+                        <a href="#">
+                          <span className="sr-only">Eugene Gadd</span>
+                          <Image
+                            layout="raw"
+                            width="256"
+                            height="256"
+                            className="w-10 h-10 border-2 border-indigo-600 rounded-full"
+                            src="/static/images/authors/eugene.jpeg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-sm font-medium text-gray-900 dark:text-white">
+                          <a href="#" className="hover:underline">
+                            {' '}
+                            Eugene Gadd{' '}
+                          </a>
+                        </p>
+                        <div className="flex space-x-1 text-sm text-gray-500 dark:text-gray-100">
+                          <time dateTime="1999-06-01"> June 1st, 1999 </time>
+                          <span aria-hidden="true"> &middot; </span>
+                          <span> 16 min read </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </Link>
           </div>
         </div>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
-          Featured Posts
-        </h3>
-        <div className="flex gap-6 flex-col md:flex-row">
-          <BlogPostCard
-            title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
-            slug="style-guides-component-libraries-design-systems"
-            gradient="from-[#D8B4FE] to-[#818CF8]"
-          />
-          <BlogPostCard
-            title="Rust Is The Future of JavaScript Infrastructure"
-            slug="rust"
-            gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
-          />
-          <BlogPostCard
-            title="Past, Present, and Future of React State Management"
-            slug="react-state-management"
-            gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
-          />
-        </div>
-        <Link href="/blog">
-          <a className="flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6">
-            Read all posts
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="h-6 w-6 ml-1"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
-              />
-            </svg>
-          </a>
-        </Link>
-        <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
-          Learn React & Next.js
-        </h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
-          Build and deploy a modern SaaS application using the most popular
-          open-source software. This course is 12 hours long and is completely
-          live streamed.
-        </p>
-        <VideoCard
-          index="01"
-          href="https://www.youtube.com/watch?v=MxR5I5_hOKk&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=2"
-          length="1:02:45"
-          title="Introduction to React 2025"
-        />
-        <VideoCard
-          index="02"
-          href="https://www.youtube.com/watch?v=AGl52moyISU&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=3"
-          length="54:22"
-          title="Firestore, Chakra UI, Absolute Imports"
-        />
-        <VideoCard
-          index="03"
-          href="https://www.youtube.com/watch?v=3g6-v3_BNbM&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=4"
-          length="1:08:30"
-          title="Designing & Building the Dashboard"
-        />
-        <VideoCard
-          index="04"
-          href="https://www.youtube.com/watch?v=u8iv_yhSRI8&list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1&index=5"
-          length="1:13:45"
-          title="Firebase Admin with Next.js + SWR"
-        />
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.youtube.com/playlist?list=PL6bwFJ82M6FXgctyoWXqj7H0GK8_YIeF1"
-          className="flex mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
-        >
-          Watch all videos
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="h-6 w-6 ml-1"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
-            />
-          </svg>
-        </a>
-        <span className="h-16" />
-        <Subscribe />
       </div>
     </Container>
   );
