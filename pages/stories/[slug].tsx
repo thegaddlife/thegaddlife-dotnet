@@ -4,7 +4,7 @@ import StoryLayout from 'layouts/story';
 import { allStories } from 'contentlayer/generated';
 import type { Story } from 'contentlayer/generated';
 
-export default function Post({ post, tweets }: { post: Story; tweets: any[] }) {
+export default function Post({ post }: { post: Story }) {
   const Component = useMDXComponent(post.body.code);
 
   return (

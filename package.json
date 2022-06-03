@@ -8,6 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.4",
+    "@heroicons/react": "^1.0.6",
     "@prisma/client": "^3.14.0",
     "@tailwindcss/typography": "0.5.2",
     "classnames": "^2.3.1",
@@ -29,6 +31,7 @@
     "use-delayed-render": "^0.0.7"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "@types/react": "^18.0.9",
     "autoprefixer": "10.4.7",
     "eslint": "8.15.0",
