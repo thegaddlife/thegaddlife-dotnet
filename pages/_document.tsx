@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document(props) {
   return (
-    <Html lang="en">
+    <Html lang="en" className="h-full">
       <Head>
         <link
           rel="preload"
@@ -46,7 +46,7 @@ export default function Document(props) {
           name="robots"
         />
       </Head>
-      <body className="bg-slate-50 dark:bg-slate-900">
+      <body className="h-full bg-slate-50 dark:bg-slate-900">
         <Main />
         <NextScript />
       </body>
