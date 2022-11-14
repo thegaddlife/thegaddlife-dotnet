@@ -1,15 +1,16 @@
 const { spacing, fontFamily } = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./pages/**/*.tsx', './components/**/*.tsx', './layouts/**/*.tsx'],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        rose: colors.rose,
-      },
-    },
+        rose: colors.rose
+      }
+    }
   },
 
   // theme: {

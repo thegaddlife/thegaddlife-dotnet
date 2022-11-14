@@ -6,13 +6,13 @@ export default function Footer() {
       <hr className="w-full mb-8 border-gray-200 border-1 dark:border-gray-800" />
       <div className="grid w-full max-w-2xl grid-cols-1 gap-4 pb-16 sm:grid-cols-3">
         <div className="flex flex-col space-y-4">
-          <Link href="/">
-            <a className="text-gray-500 transition hover:text-gray-600">Home</a>
+          <Link href="/" className="text-gray-500 transition hover:text-gray-600">
+            Home
           </Link>
-          <Link href="/about">
-            <a className="text-gray-500 transition hover:text-gray-600">
+          <Link href="/about" className="text-gray-500 transition hover:text-gray-600">
+            
               About
-            </a>
+            
           </Link>
         </div>
         <div className="flex flex-col space-y-4"></div>
