@@ -4,7 +4,6 @@ const { withContentlayer } = require('next-contentlayer');
  * @type {import('next').NextConfig}
  */
 module.exports = withContentlayer({
-  swcMinify: true,
   reactStrictMode: true,
   images: {
     domains: [
@@ -12,11 +11,6 @@ module.exports = withContentlayer({
       'pbs.twimg.com' // Twitter Profile Picture
     ]
   },
-  experimental: {
-    legacyBrowsers: false,
-    browsersListForSwc: true
-  },
-  experimental: { images: { layoutRaw: true } },
   async headers() {
     return [
       {
@@ -24,20 +18,6 @@ module.exports = withContentlayer({
         headers: securityHeaders
       }
     ];
-  },
-  webpack: (config, { dev, isServer }) => {
-    // Replace React with Preact only in client production build
-
-    if (!dev && !isServer) {
-      Object.assign(config.resolve.alias, {
-        'react/jsx-runtime.js': 'preact/compat/jsx-runtime',
-        react: 'preact/compat',
-        'react-dom/test-utils': 'preact/test-utils',
-        'react-dom': 'preact/compat'
-      });
-    }
-
-    return config;
   }
 });
 
