@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/image";
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -17,7 +17,16 @@ const CustomLink = (props) => {
 };
 
 function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />;
+  return (
+    <Image
+      alt={props.alt}
+      className="rounded-lg"
+      {...props}
+      style={{
+        maxWidth: "100%",
+        height: "auto"
+      }} />
+  );
 }
 
 function StoryImage(props) {

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import Link from 'next/link';
 import cn from 'classnames';
 import { RoughNotation } from 'react-rough-notation';
@@ -43,11 +43,9 @@ export default function Home({}) {
                   <Image
                     width="1536"
                     height="2048"
-                    layout="raw"
                     className="object-cover w-full h-48"
                     alt="Eugene in Hawaii"
-                    src="/static/images/my-memories/navy-1.jpeg"
-                  />
+                    src="/static/images/my-memories/navy-1.jpeg" />
                 </div>
                 <div className="flex flex-col justify-between flex-1 p-6 bg-white dark:bg-gray-800">
                   <div className="flex-1">

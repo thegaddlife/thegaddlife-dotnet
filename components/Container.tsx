@@ -4,27 +4,26 @@ import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import NextLink from 'next/link';
 import cn from 'classnames';
-
 import Footer from 'components/Footer';
 import MobileMenu from 'components/MobileMenu';
+import inter from '../lib/inter';
 
 function NavItem({ href, text }) {
   const router = useRouter();
   const isActive = router.asPath === href;
 
   return (
-    (<NextLink
+    <NextLink
       href={href}
       className={cn(
         isActive
           ? 'font-semibold text-gray-800 dark:text-gray-200'
           : 'font-normal text-gray-600 dark:text-gray-400',
         'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'
-      )}>
-
+      )}
+    >
       <span className="capsize">{text}</span>
-
-    </NextLink>)
+    </NextLink>
   );
 }
 
@@ -113,7 +112,7 @@ export default function Container(props) {
           </button>
         </nav>
       </div>
-      <main id="skip">
+      <main id="skip" className={inter.className}>
         {children}
         <Footer />
       </main>
